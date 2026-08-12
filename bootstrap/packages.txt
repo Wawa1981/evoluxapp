@@ -1,0 +1,42 @@
+# EvoluX Mobile — packages for Debian aarch64 (proot)
+# One package per line. Comments start with #.
+
+# base comfort
+sudo
+ca-certificates
+curl
+wget
+git
+vim
+nano
+less
+tmux
+htop
+bash-completion
+locales
+man-db
+
+# finance CLI
+ledger
+qalc
+
+# security / privacy
+gnupg
+pass
+tor
+torsocks
+openssh-client
+
+# data / scripting
+python3
+python3-pip
+python3-venv
+python3-requests
+
+# network helpers
+dnsutils
+iputils-ping
+net-tools
+
+# optional crypto wallet (may fail on some mirrors — installer continues)
+# electrum

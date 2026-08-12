@@ -1,0 +1,7 @@
+.local/
+*.tar
+*.tar.xz
+*.tar.gz
+*.iso
+*~
+.DS_Store
