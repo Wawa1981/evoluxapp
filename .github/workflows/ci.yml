@@ -1,6 +1,7 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -18,7 +19,7 @@ jobs:
       - name: Check shell scripts
         run: |
           if find . -name "*.sh" -type f | grep -q .; then
-            find . -name "*.sh" -type f -exec shellcheck {} +
+            find . -name "*.sh" -type f -exec shellcheck -S error {} +
           else
             echo "No .sh files found — CI placeholder."
           fi
